@@ -12,19 +12,15 @@ const Secrets = {
 
 function start(username, password) {
     console.log('🌀雷神加速器暂停助手 开始运行-------')
-    if (!username || !password) {
-        console.log("Empty username or password");
-        return;
-    }
     const user = {
         account_token: null,
         country_code: 86,
         lang: "zh_CN",
-        password: Secrets.password,
+        password: "8c6142429bda95636a19ee0369db883a",
         region_code: 1,
         src_channel: "guanwang",
         user_type: "0",
-        username: Secrets.username
+        username: "18010971952"
     };
 
     login(user).then(res => {
